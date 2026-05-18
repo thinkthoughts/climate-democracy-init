@@ -36,11 +36,34 @@
     a { color: var(--accent); font-weight: 700; }
     footer { margin-top: 48px; color: var(--muted); font-size: 0.95rem; }
     @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+    
+    .hero-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem auto;
+}
+
+.hero-toggle img {
+  width: min(900px, 95%);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  transition: opacity 0.25s ease;
+}
+
+.hero-toggle button {
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1rem;
+}
   </style>
 </head>
 <body>
   <main>
-    <section class="hero">
+    <!--<section class="hero">
       <div class="eyebrow">climatedemocracy.app</div>
       <h1>Climate democracy starts local.</h1>
       <p class="lede">A public lab-report scaffold for watershed reading, school-district writing, and actionable climate coordination.</p>
@@ -73,7 +96,47 @@
 
     <footer>
       <p>Draft starter site. Replace this footer with organization links, contact details, GitHub repo, and local initiative information.</p>
-    </footer>
+    </footer>-->
+    <div class="hero-toggle">
+  <img
+    id="heroImage"
+    src="images/climate_democracy.png"
+    alt="Climate Democracy"
+  />
+
+  <button id="toggleButton">
+    Toggle 1 + 1
+  </button>
+</div>
   </main>
 </body>
+  <script>
+const heroImage = document.getElementById("heroImage");
+const toggleButton = document.getElementById("toggleButton");
+
+const images = [
+  {
+    src: "images/climate_democracy.png",
+    alt: "Climate Democracy"
+  },
+  {
+    src: "images/string_theory.png",
+    alt: "String Theory"
+  }
+];
+
+let currentIndex = 0;
+
+toggleButton.addEventListener("click", () => {
+  currentIndex = (currentIndex + 1) % images.length;
+
+  heroImage.style.opacity = 0;
+
+  setTimeout(() => {
+    heroImage.src = images[currentIndex].src;
+    heroImage.alt = images[currentIndex].alt;
+    heroImage.style.opacity = 1;
+  }, 150);
+});
+</script>
 </html>
