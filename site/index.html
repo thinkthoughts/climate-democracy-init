@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Climate Democracy</title>
+  <meta name="description" content="Climate democracy lab reports for local watershed, school-district, and public coordination work." />
+  <style>
+    :root {
+      --bg: #f7f7f2;
+      --ink: #17201b;
+      --muted: #5e6a62;
+      --card: #ffffff;
+      --line: #d8ded8;
+      --accent: #2f6f4e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+    main { max-width: 980px; margin: 0 auto; padding: 48px 20px 72px; }
+    .hero { padding: 48px 0 36px; }
+    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.82rem; }
+    h1 { font-size: clamp(2.3rem, 7vw, 5.5rem); line-height: 0.95; margin: 14px 0 18px; letter-spacing: -0.06em; }
+    .lede { font-size: clamp(1.08rem, 2vw, 1.35rem); max-width: 720px; color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 36px 0; }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 22px; box-shadow: 0 10px 26px rgba(23,32,27,0.06); }
+    .card h2 { margin: 0 0 8px; font-size: 1.05rem; }
+    .card p { margin: 0; color: var(--muted); }
+    .section { border-top: 1px solid var(--line); padding-top: 28px; margin-top: 34px; }
+    code { background: #eef2ed; padding: 2px 6px; border-radius: 8px; }
+    a { color: var(--accent); font-weight: 700; }
+    footer { margin-top: 48px; color: var(--muted); font-size: 0.95rem; }
+    @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">climatedemocracy.app</div>
+      <h1>Climate democracy starts local.</h1>
+      <p class="lede">A public lab-report scaffold for watershed reading, school-district writing, and actionable climate coordination.</p>
+    </section>
+
+    <section class="grid" aria-label="Core sections">
+      <article class="card">
+        <h2>Local</h2>
+        <p>Ground reports in watershed geography, school-district geography, and public meetings.</p>
+      </article>
+      <article class="card">
+        <h2>Reports</h2>
+        <p>Generate reproducible summaries, figures, and public-facing action notes.</p>
+      </article>
+      <article class="card">
+        <h2>Workshop</h2>
+        <p>Help friends and organizations clone, adapt, and maintain their own climate-democracy reports.</p>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2>Actionable ≠ artificial</h2>
+      <p>Climate democracy is not only content. It is a repeatable practice: read local conditions, write useful reports, and connect public action to places people share.</p>
+    </section>
+
+    <section class="section">
+      <h2>Repository</h2>
+      <p>This site is designed to be generated from a template repo such as <code>climate-democracy-init</code>.</p>
+    </section>
+
+    <footer>
+      <p>Draft starter site. Replace this footer with organization links, contact details, GitHub repo, and local initiative information.</p>
+    </footer>
+  </main>
+</body>
+</html>
