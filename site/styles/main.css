@@ -45,7 +45,7 @@ main {
 #qr-container {
   width: 244px;
   min-height: 244px;
-  margin: 0 auto 1rem;
+  margin: 0 auto;
   padding: 12px;
   background: #ffffff;
   border-radius: 12px;
