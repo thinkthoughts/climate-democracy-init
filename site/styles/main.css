@@ -38,25 +38,31 @@ main {
 }
 
 .footer {
-  margin-top: 2rem;
+  margin: 2rem auto;
   text-align: center;
 }
 
-.qr {
-  width: 140px;
-  height: 140px;
-  border-radius: 8px;
-  background: white;
-  padding: 8px;
+#qr-container {
+  width: 244px;
+  min-height: 244px;
+  margin: 0 auto 1rem;
+  padding: 12px;
+  background: #ffffff;
+  border-radius: 12px;
 }
 
-#qr-container {
-  margin: 2rem auto;
-  width: 140px;
+#qr-container img,
+#qr-container canvas {
+  display: block;
+  width: 220px !important;
+  height: 220px !important;
 }
 
 .footer p {
-  margin-top: 0.75rem;
   color: #888;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+}
+
+.footer a {
+  color: #8ee0aa;
 }
