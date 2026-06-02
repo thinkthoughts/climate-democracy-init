@@ -1,12 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
   const target = document.getElementById("qr-container");
 
-  if (!target) return;
+  if (!target || typeof QRCode === "undefined") return;
+
+  target.innerHTML = "";
 
   new QRCode(target, {
     text: window.location.href,
-    width: 140,
-    height: 140,
-    correctLevel: QRCode.CorrectLevel.M
+    width: 220,
+    height: 220,
+    colorDark: "#000000",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
   });
 });
