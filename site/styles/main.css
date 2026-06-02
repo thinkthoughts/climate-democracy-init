@@ -50,6 +50,11 @@ main {
   padding: 8px;
 }
 
+#qr-container {
+  margin: 2rem auto;
+  width: 140px;
+}
+
 .footer p {
   margin-top: 0.75rem;
   color: #888;
