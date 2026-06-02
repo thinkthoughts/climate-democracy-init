@@ -1,84 +1,60 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Climate Democracy</title>
-  <meta name="description" content="Climate democracy lab reports for local watershed, school-district, and public coordination work." />
-  <style>
-    :root {
-      --ink: #f7f7f2;
-      --bg: #17201b;
-      --muted: #5e6a62;
-      --card: #ffffff;
-      --line: #d8ded8;
-      --accent: #2f6f4e;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--ink);
-      line-height: 1.55;
-    }
-    main { max-width: 980px; margin: 0 auto; padding: 48px 20px 72px; }
-    .hero { padding: 48px 0 36px; }
-    .eyebrow { color: var(--accent); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.82rem; }
-    h1 { font-size: clamp(2.3rem, 7vw, 5.5rem); line-height: 0.95; margin: 14px 0 18px; letter-spacing: -0.06em; }
-    .lede { font-size: clamp(1.08rem, 2vw, 1.35rem); max-width: 720px; color: var(--muted); }
-    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 36px 0; }
-    .card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 22px; box-shadow: 0 10px 26px rgba(23,32,27,0.06); }
-    .card h2 { margin: 0 0 8px; font-size: 1.05rem; }
-    .card p { margin: 0; color: var(--muted); }
-    .section { border-top: 1px solid var(--line); padding-top: 28px; margin-top: 34px; }
-    code { background: #eef2ed; padding: 2px 6px; border-radius: 8px; }
-    a { color: var(--accent); font-weight: 700; }
-    footer { margin-top: 48px; color: var(--muted); font-size: 0.95rem; }
-    @media (max-width: 760px) { .grid { grid-template-columns: 1fr; } }
-    
-    .hero-toggle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin: 2rem auto;
-}
 
-.hero-toggle img {
-  width: min(900px, 95%);
-  border-radius: 12px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
-  transition: opacity 0.25s ease;
-}
+  <meta
+    name="description"
+    content="Climate democracy lab reports for local watershed, school-district, and public coordination work."
+  >
 
-.hero-toggle button {
-  padding: 0.75rem 1.25rem;
-  border: none;
-  border-radius: 999px;
-  cursor: pointer;
-  font-size: 1rem;
-}
-    .repo-button {
-  display: inline-block;
-  margin-top: 0.75rem;
-  padding: 0.75rem 1.25rem;
-  border-radius: 999px;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: 600;
-  border: 1px solid currentColor;
-}
-  </style>
+  <link rel="stylesheet" href="styles/main.css">
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+  </script>
+
+  <script
+    async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
 </head>
-<body style="margin:0; background:#000; display:flex; justify-content:center; align-items:center; min-height:100vh;">
-  <main style="width:100%; display:flex; justify-content:center; align-items:center; padding:1rem; box-sizing:border-box;">
-    <a href="https://labreports.app"><img 
-      src="images/sdg5.png" 
-      alt="Infographic contrasting SDG5 and capitalism through measurable ecosystems, valuation systems, and the equation 1+1 > |1.4i| ≠ $0.96."
-      style="max-width:100%; height:auto; display:block; border-radius:12px; box-shadow:0 0 24px rgba(0,0,0,0.5);"
-    /></a>
-  </main><br>
-  <a href="https://labreports.app">labreports.app</a> | <a href="2605-28964.html">arXiv:2605.28964</a> |
+<body>
+  <main>
+    <section class="hero-image">
+      <a href="https://labreports.app">
+        <img
+          src="images/sdg5.png"
+          alt="Infographic contrasting SDG5 and capitalism through measurable ecosystems, valuation systems, and the equation 1+1 > |1.4i| ≠ $0.96."
+        />
+      </a>
+    </section>
+
+    <section class="links">
+      <a href="https://labreports.app">labreports.app</a>
+      <span>|</span>
+      <a href="2605-28964.html">arXiv:2605.28964</a>
+      <span>|</span>
+      <a href="https://github.com/thinkthoughts/init-lab-report">init-lab-report</a>
+    </section>
+  </main>
+  <footer class="footer">
+  <img
+    src="images/qr-labreports.png"
+    alt="QR code linking to labreports.app"
+    class="qr"
+  />
+
+  <p>
+    <a href="https://labrepoarts.app">labreports.app</a> · evidence-based reports · ipynb notebooks · verifiable figures
+  </p>
+</footer>
 </body>
 </html>
