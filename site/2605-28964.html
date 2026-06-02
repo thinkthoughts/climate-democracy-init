@@ -52,20 +52,9 @@
     <a href="https://labrepoarts.app">labreports.app</a> · evidence-based reports · ipynb notebooks · verifiable figures
   </p>
     <div id="qr-container"></div>
-
+  <div id="qr-container"></div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-  
-  <script>
-  new QRCode(
-    document.getElementById("qr-container"),
-    {
-      text: window.location.href,
-      width: 140,
-      height: 140,
-      correctLevel: QRCode.CorrectLevel.M
-    }
-  );
-  </script>
+  <script src="js/qr.js"></script>
 </footer>
 </body>
 </html>
