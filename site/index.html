@@ -1,62 +1,95 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Climate Democracy</title>
+  <meta name="description" content="Climate Democracy prescribes public action from climate reality: evidence, science literacy, and collective responsibility." />
 
-  <meta
-    name="description"
-    content="Climate democracy lab reports for local watershed, school-district, and public coordination work."
-  >
-
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
 
   <script>
     window.MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-      }
+      tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+      svg: { fontCache: 'global' }
     };
   </script>
-
-  <script
-    async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+  <script defer src="assets/js/main.js"></script>
 </head>
+
 <body>
+  <header class="site-header">
+    <a class="brand" href="/">Climate Democracy</a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="#prescribes">Prescribes</a>
+      <a href="#lab-reports">Lab Reports</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle dark mode">
+      🌙
+    </button>
+  </header>
+
   <main>
-    <section class="hero-image">
-      <a href="https://labreports.app">
-        <img
-          src="images/sdg5.png"
-          alt="Infographic contrasting SDG5 and capitalism through measurable ecosystems, valuation systems, and the equation 1+1 > |1.4i| ≠ $0.96."
-        />
-      </a>
+    <section class="hero">
+      <p class="eyebrow">Climate Democracy</p>
+      <h1>Public action guided by climate reality.</h1>
+
+      <p class="lede">
+        Climate Democracy prescribes what Climate Reality describes:
+        false claims are inconsistent with the Sun’s mass, Earth’s atmosphere,
+        and the measurable energy systems that make life possible.
+      </p>
+
+      <p class="equation">
+        $c = \sqrt{E/m} \neq -1$
+      </p>
     </section>
 
-    <section class="links">
-      <a href="https://labreports.app">labreports.app</a>
-      <span>|</span>
-      <a href="2605-28964.html">arXiv:2605.28964</a>
-      <span>|</span>
-      <a href="https://github.com/thinkthoughts/init-lab-report">init-lab-report</a>
+    <figure class="hero-card">
+      <img
+        src="assets/img/climate-democracy.png"
+        alt="Climate Democracy infographic showing science, evidence, public responsibility, and collective action guided by climate reality."
+      />
+      <figcaption>
+        Climate Democracy begins where climate facts become public responsibility.
+      </figcaption>
+    </figure>
+
+    <section id="prescribes" class="content-section">
+      <h2>Prescribes</h2>
+      <p>
+        Truthful public systems require evidence, transparency, science literacy,
+        and collective action grounded in physical reality.
+      </p>
+    </section>
+
+    <section id="lab-reports" class="content-section">
+      <h2>Lab Reports</h2>
+      <p>
+        Research notes, public science readings, arXiv reports, and climate-democracy
+        specifications will be listed here.
+      </p>
+    </section>
+
+    <section id="about" class="content-section">
+      <h2>About</h2>
+      <p>
+        Climate Democracy is the public-action companion to Climate Reality:
+        description becomes prescription when evidence meets responsibility.
+      </p>
     </section>
   </main>
-  <footer class="footer">
-  <div id="qr-container" aria-label="QR code linking to this page"></div>
 
-  <p>
-    labreports.app
-    · evidence-based reports
-    · ipynb notebooks
-    · verifiable figures
-  </p>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-  <script src="js/qr.js"></script>
-</footer>
+  <footer class="site-footer">
+    <p>
+      Climate Democracy · repo links, recent posts, visual reports, and public-action specs coming next.
+    </p>
+  </footer>
 </body>
 </html>
